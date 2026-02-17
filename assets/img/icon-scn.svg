@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="SC">
+  <defs>
+    <linearGradient id="sc-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3f8ae0" />
+      <stop offset="100%" stop-color="#1f5cab" />
+    </linearGradient>
+  </defs>
+  <circle cx="90" cy="90" r="84" fill="url(#sc-gradient)" />
+  <text x="90" y="99" fill="#ffffff" font-family="Open Sans, Arial, sans-serif" font-size="54" font-weight="700" text-anchor="middle">SC</text>
+</svg>
