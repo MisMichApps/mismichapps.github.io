@@ -117,6 +117,43 @@ textarea:focus-visible {
   color: #ffffff !important;
 }
 
+#navigation .language-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.55rem;
+}
+
+#navigation .lang-flag {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 2px solid rgba(17, 32, 58, 0.25);
+  box-shadow: 0 4px 10px rgba(17, 32, 58, 0.14);
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+#navigation .lang-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#navigation .lang-flag:hover {
+  transform: translateY(-1px);
+  border-color: rgba(17, 32, 58, 0.5);
+}
+
+#navigation .lang-flag.is-active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.16), 0 6px 12px rgba(17, 32, 58, 0.2);
+}
+
 .home-hero {
   padding: 1.2rem 1rem 0.4rem;
 }
@@ -493,6 +530,15 @@ textarea:focus-visible {
 @media (max-width: 991.98px) {
   #navigation .navbar {
     border-radius: 20px;
+  }
+
+  #navigation .language-selector {
+    margin-left: 0.4rem;
+  }
+
+  #navigation .lang-flag {
+    width: 30px;
+    height: 30px;
   }
 
   #navigation .navbar-collapse {

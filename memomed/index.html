@@ -57,13 +57,23 @@
                                 </button>
                                 <div class="collapse navbar-collapse navbar-2066">
                                     <ul class="site-navigation nav navbar-nav ms-auto">
-                                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                                        <li class="nav-item"><a href="../pcn/index.html" class="nav-link">Pañales CN</a></li>
-                                        <li class="nav-item"><a href="../scn/index.html" class="nav-link">Suplementos CN</a></li>
-                                        <li class="nav-item"><a href="../pequedosis/index.html" class="nav-link">PequeDosis</a></li>
-                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">MemoMed</a></li>
-                                        <li class="nav-item"><a href="../centum/index.html" class="nav-link">Centum</a></li>
+                                        <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                                        <li class="nav-item"><a href="../pcn/index.html" class="nav-link" data-i18n="nav.pcn">Pañales CN</a></li>
+                                        <li class="nav-item"><a href="../scn/index.html" class="nav-link" data-i18n="nav.scn">Suplementos CN</a></li>
+                                        <li class="nav-item"><a href="../pequedosis/index.html" class="nav-link" data-i18n="nav.pequedosis">PequeDosis</a></li>
+                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page" data-i18n="nav.memomed">MemoMed</a></li>
+                                        <li class="nav-item"><a href="../centum/index.html" class="nav-link" data-i18n="nav.centum">Centum</a></li>
                                     </ul>
+                                </div>
+                                <div class="language-selector" role="group" aria-label="Selector de idioma / Language selector">
+                                    <button type="button" class="lang-flag is-active" data-lang="es" aria-label="Español" aria-pressed="true" title="Español">
+                                        <img src="../img/icons/es.png" alt="Español" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">Español</span>
+                                    </button>
+                                    <button type="button" class="lang-flag" data-lang="en" aria-label="English" aria-pressed="false" title="English">
+                                        <img src="../img/icons/en.png" alt="English" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">English</span>
+                                    </button>
                                 </div>
                             </div>
                         </nav>
@@ -81,30 +91,30 @@
                         <img src="../img/IconMMM.png" alt="Icono de MemoMed" width="70" height="70" data-fallback="../assets/img/icon-memomed.svg" data-initials="MM">
                     </div>
                     <div>
-                        <p class="app-detail-kicker">Herramienta clínica</p>
+                        <p class="app-detail-kicker" data-i18n="memomed.kicker">Herramienta clínica</p>
                         <h1 class="app-detail-title">MemoMed</h1>
-                        <p class="app-detail-description">Notas clínicas modulares para sanitarios, con editor enriquecido y exportación.</p>
+                        <p class="app-detail-description" data-i18n="memomed.description">Notas clínicas modulares para sanitarios, con editor enriquecido y exportación.</p>
                     </div>
                 </header>
 
                 <div class="app-columns">
                     <section class="app-panel">
-                        <h2>Público objetivo</h2>
-                        <p>Profesionales sanitarios que necesitan organizar conocimiento clínico operativo para consulta diaria, sesiones o guardias.</p>
+                        <h2 data-i18n="memomed.section.target">Público objetivo</h2>
+                        <p data-i18n="memomed.section.targetText">Profesionales sanitarios que necesitan organizar conocimiento clínico operativo para consulta diaria, sesiones o guardias.</p>
                     </section>
 
                     <section class="app-panel">
-                        <h2>Funciones principales</h2>
+                        <h2 data-i18n="memomed.section.features">Funciones principales</h2>
                         <ul>
-                            <li>Notas con módulos: posología, recomendaciones y protocolos.</li>
-                            <li>Búsqueda avanzada, filtrado y clasificación por etiquetas/tipos.</li>
-                            <li>Exportación a PDF para compartir resúmenes clínicos.</li>
-                            <li>Sincronización por cuenta cuando el servicio esté disponible.</li>
+                            <li data-i18n="memomed.feature.1">Notas con módulos: posología, recomendaciones y protocolos.</li>
+                            <li data-i18n="memomed.feature.2">Búsqueda avanzada, filtrado y clasificación por etiquetas/tipos.</li>
+                            <li data-i18n="memomed.feature.3">Exportación a PDF para compartir resúmenes clínicos.</li>
+                            <li data-i18n="memomed.feature.4">Sincronización por cuenta cuando el servicio esté disponible.</li>
                         </ul>
                     </section>
                 </div>
 
-                <p class="app-note">Herramienta de apoyo. No almacenes datos identificativos de pacientes si no está diseñada y validada para ese uso.</p>
+                <p class="app-note" data-i18n="memomed.note">Herramienta de apoyo. No almacenes datos identificativos de pacientes si no está diseñada y validada para ese uso.</p>
 
                 <div class="app-links" aria-label="Enlaces de MemoMed">
                     <a class="store-btn" href="#" aria-label="Consultar disponibilidad de MemoMed en App Store (próximamente)">
@@ -113,9 +123,9 @@
                     <a class="store-btn" href="#" aria-label="Consultar disponibilidad de MemoMed en Google Play (próximamente)">
                         <img src="../img/gplay.png" alt="Google Play (próximamente)" width="185" height="55" loading="lazy">
                     </a>
-                    <a class="btn-link-pill" href="https://memomed.app" target="_blank" rel="noopener noreferrer">Web MemoMed</a>
-                    <a class="btn-link-pill" href="../contacto/index.html">Soporte</a>
-                    <a class="btn-link-pill" href="../politicadeprivacidad/index.html">Política de privacidad</a>
+                    <a class="btn-link-pill" href="https://memomed.app" target="_blank" rel="noopener noreferrer" data-i18n="memomed.web">Web MemoMed</a>
+                    <a class="btn-link-pill" href="../contacto/index.html" data-i18n="common.support">Soporte</a>
+                    <a class="btn-link-pill" href="../politicadeprivacidad/index.html" data-i18n="common.privacy">Política de privacidad</a>
                 </div>
             </article>
         </div>
@@ -136,20 +146,20 @@
                         <p class="text-sm-start float-none text-start">Mich Apps © <span data-current-year>2026</span> por Carlos Martín Coloma</p>
                     </div>
                     <div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Apps</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.apps">Apps</h4>
                         <a href="../pcn/index.html" class="a-btn a-block">Pañales CN</a>
                         <a href="../scn/index.html" class="a-btn a-block">Suplementos CN</a>
                         <a href="../pequedosis/index.html" class="a-btn a-block">PequeDosis</a>
                         <a href="./index.html" class="a-btn a-block">MemoMed</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Juegos</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.games">Juegos</h4>
                         <a href="../centum/index.html" class="a-btn a-block">Centum</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Soporte</h4>
-                        <a href="../contacto/index.html" class="a-btn a-block">Contacto</a>
-                        <a href="../politicadeprivacidad/index.html" class="a-btn a-block">Política de privacidad</a>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.support">Soporte</h4>
+                        <a href="../contacto/index.html" class="a-btn a-block" data-i18n="footer.contact">Contacto</a>
+                        <a href="../politicadeprivacidad/index.html" class="a-btn a-block" data-i18n="footer.policy">Política de privacidad</a>
                     </div>
                 </div>
             </div>
@@ -158,6 +168,46 @@
 </div>
 
 <script src="../js/all.js?5404"></script>
+<script>
+window.pageTranslations = {
+    es: {
+        "meta.title": "MemoMed | Mich Apps",
+        "meta.description": "MemoMed: notas clínicas modulares para sanitarios con búsqueda, etiquetado y exportación.",
+        "meta.ogTitle": "MemoMed | Mich Apps",
+        "meta.ogDescription": "Notas clínicas modulares con editor enriquecido y exportación para profesionales sanitarios.",
+        "meta.ogLocale": "es_ES",
+        "memomed.kicker": "Herramienta clínica",
+        "memomed.description": "Notas clínicas modulares para sanitarios, con editor enriquecido y exportación.",
+        "memomed.section.target": "Público objetivo",
+        "memomed.section.targetText": "Profesionales sanitarios que necesitan organizar conocimiento clínico operativo para consulta diaria, sesiones o guardias.",
+        "memomed.section.features": "Funciones principales",
+        "memomed.feature.1": "Notas con módulos: posología, recomendaciones y protocolos.",
+        "memomed.feature.2": "Búsqueda avanzada, filtrado y clasificación por etiquetas/tipos.",
+        "memomed.feature.3": "Exportación a PDF para compartir resúmenes clínicos.",
+        "memomed.feature.4": "Sincronización por cuenta cuando el servicio esté disponible.",
+        "memomed.note": "Herramienta de apoyo. No almacenes datos identificativos de pacientes si no está diseñada y validada para ese uso.",
+        "memomed.web": "Web MemoMed"
+    },
+    en: {
+        "meta.title": "MemoMed | Mich Apps",
+        "meta.description": "MemoMed: modular clinical notes for healthcare professionals with search, tagging, and export.",
+        "meta.ogTitle": "MemoMed | Mich Apps",
+        "meta.ogDescription": "Modular clinical notes with rich editing and export for healthcare professionals.",
+        "meta.ogLocale": "en_GB",
+        "memomed.kicker": "Clinical Tool",
+        "memomed.description": "Modular clinical notes for healthcare teams, with rich editing and export.",
+        "memomed.section.target": "Target users",
+        "memomed.section.targetText": "Healthcare professionals who need to organize practical clinical knowledge for daily consultations, sessions, or shifts.",
+        "memomed.section.features": "Main features",
+        "memomed.feature.1": "Module-based notes: dosage, recommendations, and protocols.",
+        "memomed.feature.2": "Advanced search, filtering, and organization by labels/types.",
+        "memomed.feature.3": "PDF export to share clinical summaries.",
+        "memomed.feature.4": "Account sync when the service is available.",
+        "memomed.note": "Support tool. Do not store patient-identifying data unless the system is specifically designed and validated for that purpose.",
+        "memomed.web": "MemoMed website"
+    }
+};
+</script>
 <script src="../assets/js/main.js?v=20260215"></script>
 </body>
 </html>

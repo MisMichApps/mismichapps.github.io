@@ -58,13 +58,23 @@
                                 </button>
                                 <div class="collapse navbar-collapse navbar-2066">
                                     <ul class="site-navigation nav navbar-nav ms-auto">
-                                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                                        <li class="nav-item"><a href="../pcn/index.html" class="nav-link">Pañales CN</a></li>
-                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Suplementos CN</a></li>
-                                        <li class="nav-item"><a href="../pequedosis/index.html" class="nav-link">PequeDosis</a></li>
-                                        <li class="nav-item"><a href="../memomed/index.html" class="nav-link">MemoMed</a></li>
-                                        <li class="nav-item"><a href="../centum/index.html" class="nav-link">Centum</a></li>
+                                        <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                                        <li class="nav-item"><a href="../pcn/index.html" class="nav-link" data-i18n="nav.pcn">Pañales CN</a></li>
+                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page" data-i18n="nav.scn">Suplementos CN</a></li>
+                                        <li class="nav-item"><a href="../pequedosis/index.html" class="nav-link" data-i18n="nav.pequedosis">PequeDosis</a></li>
+                                        <li class="nav-item"><a href="../memomed/index.html" class="nav-link" data-i18n="nav.memomed">MemoMed</a></li>
+                                        <li class="nav-item"><a href="../centum/index.html" class="nav-link" data-i18n="nav.centum">Centum</a></li>
                                     </ul>
+                                </div>
+                                <div class="language-selector" role="group" aria-label="Selector de idioma / Language selector">
+                                    <button type="button" class="lang-flag is-active" data-lang="es" aria-label="Español" aria-pressed="true" title="Español">
+                                        <img src="../img/icons/es.png" alt="Español" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">Español</span>
+                                    </button>
+                                    <button type="button" class="lang-flag" data-lang="en" aria-label="English" aria-pressed="false" title="English">
+                                        <img src="../img/icons/en.png" alt="English" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">English</span>
+                                    </button>
                                 </div>
                             </div>
                         </nav>
@@ -82,41 +92,41 @@
                         <img src="../img/IconBCN.png" alt="Icono de la app Suplementos CN" width="70" height="70" data-fallback="../assets/img/icon-scn.svg" data-initials="SC">
                     </div>
                     <div>
-                        <p class="app-detail-kicker">Herramienta sanitaria</p>
+                        <p class="app-detail-kicker" data-i18n="scn.kicker">Herramienta sanitaria</p>
                         <h1 class="app-detail-title">Suplementos CN</h1>
-                        <p class="app-detail-description">Tu atajo para localizar suplementos con Código Nacional: menos clics, más claridad.</p>
+                        <p class="app-detail-description" data-i18n="scn.description">Tu atajo para localizar suplementos con Código Nacional: menos clics, más claridad.</p>
                         <div class="app-chips" aria-label="Etiquetas de Suplementos CN">
-                            <span class="app-chip">Sanitarios</span>
-                            <span class="app-chip">Código Nacional</span>
-                            <span class="app-chip">Consulta rápida</span>
+                            <span class="app-chip" data-i18n="scn.chip.health">Sanitarios</span>
+                            <span class="app-chip" data-i18n="scn.chip.code">Código Nacional</span>
+                            <span class="app-chip" data-i18n="scn.chip.quick">Consulta rápida</span>
                         </div>
                     </div>
                 </header>
 
                 <div class="app-columns">
                     <section class="app-panel">
-                        <h2>Qué hace</h2>
-                        <p>Consulta ordenada de suplementos con CN para uso práctico en entorno sanitario, priorizando una lectura limpia y directa.</p>
+                        <h2 data-i18n="scn.section.what">Qué hace</h2>
+                        <p data-i18n="scn.section.whatText">Consulta ordenada de suplementos con CN para uso práctico en entorno sanitario, priorizando una lectura limpia y directa.</p>
                     </section>
 
                     <section class="app-panel">
-                        <h2>Para quién</h2>
-                        <p>Diseñada para profesionales sanitarios que necesitan ubicar suplementos con rapidez durante la actividad clínica diaria.</p>
+                        <h2 data-i18n="scn.section.who">Para quién</h2>
+                        <p data-i18n="scn.section.whoText">Diseñada para profesionales sanitarios que necesitan ubicar suplementos con rapidez durante la actividad clínica diaria.</p>
                     </section>
 
                     <section class="app-panel">
-                        <h2>Funciones clave</h2>
+                        <h2 data-i18n="scn.section.features">Funciones clave</h2>
                         <ul>
-                            <li>Listado claro y fácil de recorrer.</li>
-                            <li>Fichas con CN y descripción breve.</li>
-                            <li>Enfoque en rapidez y legibilidad.</li>
+                            <li data-i18n="scn.feature.1">Listado claro y fácil de recorrer.</li>
+                            <li data-i18n="scn.feature.2">Fichas con CN y descripción breve.</li>
+                            <li data-i18n="scn.feature.3">Enfoque en rapidez y legibilidad.</li>
                         </ul>
                     </section>
                 </div>
 
                 <section class="app-note" aria-labelledby="aviso-scn">
-                    <h2 id="aviso-scn">Aviso</h2>
-                    <p>No sustituye guías clínicas ni indicaciones del fabricante. Comprueba siempre CN, indicación y disponibilidad.</p>
+                    <h2 id="aviso-scn" data-i18n="scn.note.title">Aviso</h2>
+                    <p data-i18n="scn.note.text">No sustituye guías clínicas ni indicaciones del fabricante. Comprueba siempre CN, indicación y disponibilidad.</p>
                 </section>
 
                 <div class="app-links" aria-label="Enlaces de Suplementos CN">
@@ -126,8 +136,8 @@
                     <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.michapps.bcn" target="_blank" rel="noopener noreferrer" aria-label="Descargar Suplementos CN en Google Play">
                         <img src="../img/gplay.png" alt="Disponible en Google Play" width="185" height="55" loading="lazy">
                     </a>
-                    <a class="btn-link-pill" href="../contacto/index.html">Soporte</a>
-                    <a class="btn-link-pill" href="../politicadeprivacidad/index.html">Política de privacidad</a>
+                    <a class="btn-link-pill" href="../contacto/index.html" data-i18n="common.support">Soporte</a>
+                    <a class="btn-link-pill" href="../politicadeprivacidad/index.html" data-i18n="common.privacy">Política de privacidad</a>
                 </div>
             </article>
         </div>
@@ -148,20 +158,20 @@
                         <p class="text-sm-start float-none text-start">Mich Apps © <span data-current-year>2026</span> por Carlos Martín Coloma</p>
                     </div>
                     <div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Apps</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.apps">Apps</h4>
                         <a href="../pcn/index.html" class="a-btn a-block">Pañales CN</a>
                         <a href="./index.html" class="a-btn a-block">Suplementos CN</a>
                         <a href="../pequedosis/index.html" class="a-btn a-block">PequeDosis</a>
                         <a href="../memomed/index.html" class="a-btn a-block">MemoMed</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Juegos</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.games">Juegos</h4>
                         <a href="../centum/index.html" class="a-btn a-block">Centum</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Soporte</h4>
-                        <a href="../contacto/index.html" class="a-btn a-block">Contacto</a>
-                        <a href="../politicadeprivacidad/index.html" class="a-btn a-block">Política de privacidad</a>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.support">Soporte</h4>
+                        <a href="../contacto/index.html" class="a-btn a-block" data-i18n="footer.contact">Contacto</a>
+                        <a href="../politicadeprivacidad/index.html" class="a-btn a-block" data-i18n="footer.policy">Política de privacidad</a>
                     </div>
                 </div>
             </div>
@@ -170,6 +180,54 @@
 </div>
 
 <script src="../js/all.js?5404"></script>
+<script>
+window.pageTranslations = {
+    es: {
+        "meta.title": "Suplementos CN | Mich Apps",
+        "meta.description": "Suplementos CN: localiza suplementos con Código Nacional de forma rápida y legible para uso sanitario.",
+        "meta.ogTitle": "Suplementos CN | Mich Apps",
+        "meta.ogDescription": "Tu atajo para localizar suplementos con Código Nacional: menos clics, más claridad.",
+        "meta.ogLocale": "es_ES",
+        "scn.kicker": "Herramienta sanitaria",
+        "scn.description": "Tu atajo para localizar suplementos con Código Nacional: menos clics, más claridad.",
+        "scn.chip.health": "Sanitarios",
+        "scn.chip.code": "Código Nacional",
+        "scn.chip.quick": "Consulta rápida",
+        "scn.section.what": "Qué hace",
+        "scn.section.whatText": "Consulta ordenada de suplementos con CN para uso práctico en entorno sanitario, priorizando una lectura limpia y directa.",
+        "scn.section.who": "Para quién",
+        "scn.section.whoText": "Diseñada para profesionales sanitarios que necesitan ubicar suplementos con rapidez durante la actividad clínica diaria.",
+        "scn.section.features": "Funciones clave",
+        "scn.feature.1": "Listado claro y fácil de recorrer.",
+        "scn.feature.2": "Fichas con CN y descripción breve.",
+        "scn.feature.3": "Enfoque en rapidez y legibilidad.",
+        "scn.note.title": "Aviso",
+        "scn.note.text": "No sustituye guías clínicas ni indicaciones del fabricante. Comprueba siempre CN, indicación y disponibilidad."
+    },
+    en: {
+        "meta.title": "Suplementos CN | Mich Apps",
+        "meta.description": "Suplementos CN: quickly find supplements by National Code with clear, clinical-friendly results.",
+        "meta.ogTitle": "Suplementos CN | Mich Apps",
+        "meta.ogDescription": "Your shortcut to find supplements by National Code: fewer taps, better clarity.",
+        "meta.ogLocale": "en_GB",
+        "scn.kicker": "Healthcare Tool",
+        "scn.description": "Your shortcut to find supplements by National Code: fewer taps, better clarity.",
+        "scn.chip.health": "Healthcare",
+        "scn.chip.code": "National Code",
+        "scn.chip.quick": "Quick lookup",
+        "scn.section.what": "What it does",
+        "scn.section.whatText": "Structured supplement lookup by National Code for clinical practice, focused on clean and direct readability.",
+        "scn.section.who": "Who it is for",
+        "scn.section.whoText": "Built for healthcare professionals who need to locate supplements quickly during daily clinical work.",
+        "scn.section.features": "Key features",
+        "scn.feature.1": "Clear, easy-to-scan listing.",
+        "scn.feature.2": "Cards with National Code and short description.",
+        "scn.feature.3": "Designed for speed and readability.",
+        "scn.note.title": "Notice",
+        "scn.note.text": "Does not replace clinical guidelines or manufacturer instructions. Always check National Code, indication, and availability."
+    }
+};
+</script>
 <script src="../assets/js/main.js?v=20260215"></script>
 </body>
 </html>

@@ -15,9 +15,43 @@
 	<meta name="robots" content="index, follow">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     
-	<link rel="stylesheet" type="text/css" href="../all.css?2709">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,40&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <title>Centum</title>
+		<link rel="stylesheet" type="text/css" href="../all.css?2709">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,40&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	    <title>Centum</title>
+	<style>
+		#navigation .language-selector {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.35rem;
+			margin-left: 0.55rem;
+		}
+		#navigation .lang-flag {
+			width: 34px;
+			height: 34px;
+			border-radius: 999px;
+			border: 2px solid rgba(255, 255, 255, 0.4);
+			padding: 0;
+			overflow: hidden;
+			background: transparent;
+			cursor: pointer;
+		}
+		#navigation .lang-flag img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+		#navigation .lang-flag.is-active {
+			border-color: #ffffff;
+			box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.5);
+		}
+		@media (max-width: 991.98px) {
+			#navigation .lang-flag {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	</style>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -58,30 +92,40 @@
 						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 ms-auto me-md-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-2066">
 							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
 						</button>
-						<div class="collapse navbar-collapse navbar-2066">
-								<ul class="site-navigation nav navbar-nav ms-auto">
-									<li class="nav-item">
-										<a href="../index.html" class="nav-link  ltc-5851">Inicio</a>
-									</li>
-									<li class="nav-item">
-										<a href="../pcn/index.html" class="nav-link a-btn ltc-5851">Pañales CN</a>
-									</li>
-									<li class="nav-item">
-										<a href="../scn/index.html" class="nav-link a-btn ltc-5851">Suplementos CN</a>
-									</li>
+							<div class="collapse navbar-collapse navbar-2066">
+									<ul class="site-navigation nav navbar-nav ms-auto">
 										<li class="nav-item">
-											<a href="../pequedosis/index.html" class="nav-link a-btn ltc-5851">PequeDosis</a>
+											<a href="../index.html" class="nav-link  ltc-5851" data-i18n="nav.home">Inicio</a>
 										</li>
 										<li class="nav-item">
-											<a href="../memomed/index.html" class="nav-link a-btn ltc-5851">MemoMed</a>
+											<a href="../pcn/index.html" class="nav-link a-btn ltc-5851" data-i18n="nav.pcn">Pañales CN</a>
 										</li>
 										<li class="nav-item">
-											<a href="./index.html" class="a-btn nav-link ltc-5851">Centum</a>
+											<a href="../scn/index.html" class="nav-link a-btn ltc-5851" data-i18n="nav.scn">Suplementos CN</a>
 										</li>
-								</ul>
+											<li class="nav-item">
+												<a href="../pequedosis/index.html" class="nav-link a-btn ltc-5851" data-i18n="nav.pequedosis">PequeDosis</a>
+											</li>
+											<li class="nav-item">
+												<a href="../memomed/index.html" class="nav-link a-btn ltc-5851" data-i18n="nav.memomed">MemoMed</a>
+											</li>
+											<li class="nav-item">
+												<a href="./index.html" class="a-btn nav-link ltc-5851" data-i18n="nav.centum">Centum</a>
+											</li>
+									</ul>
+								</div>
+							<div class="language-selector" role="group" aria-label="Selector de idioma / Language selector">
+								<button type="button" class="lang-flag is-active" data-lang="es" aria-label="Español" aria-pressed="true" title="Español">
+									<img src="../img/icons/es.png" alt="Español" width="34" height="34" loading="lazy">
+									<span class="visually-hidden">Español</span>
+								</button>
+								<button type="button" class="lang-flag" data-lang="en" aria-label="English" aria-pressed="false" title="English">
+									<img src="../img/icons/en.png" alt="English" width="34" height="34" loading="lazy">
+									<span class="visually-hidden">English</span>
+								</button>
 							</div>
-					</div>
-				</nav>
+						</div>
+					</nav>
 			</div>
 		</div>
 	</div>
@@ -97,7 +141,7 @@
 			<div class="offset-lg-1 col-lg-10">
 				<div class="row">
 					<div class="col">
-						<p class="text-lg-center p-hero-style tc-5851 text-center">
+						<p class="text-lg-center p-hero-style tc-5851 text-center" data-i18n="centum.heroTitle">
 							Centum: The Game
 						</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Icon.webp"><img src="../img/lazyload-ph.png" data-src="../img/Icon.png" class="img-fluid img-protected mx-auto d-block img-titulo--style img-protected mb-lg-2 lazyload" alt="Icono" width="180" height="180"></picture><a href="#" aria-label="Descargar Centum en App Store (próximamente)"><img src="../img/lazyload-ph.png" data-src="../img/DAS.png" class="img-fluid img-protected mx-auto d-block img-30-style img-protected lazyload" alt="Descargar Centum en App Store" width="185" height="73"></a>
 					</div>
@@ -174,20 +218,20 @@
 			<div class="col-md-6 text-start">
 						<div class="row">
 							<div class="col">
-								<p class="p-style tc-7096 mb-lg-2 mt-lg-2 mt-sm-3 mt-4 text-center">
-									The goal on Centum is to fill the 100 squares on the board.&nbsp;
-								</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/tablero.webp"><img src="../img/lazyload-ph.png" data-src="../img/tablero.png" class="img-fluid img-protected mx-auto d-block img-table-style mb-lg-2 img-protected mt-2 mb-4 lazyload" alt="tablero" width="238" height="238"></picture>
-								<p class="p-bloc-6-style tc-7096 text-center">
-									Starting by selecting one and jumping 1 diagonally or 2 horizontally/vertically.
-								</p>
+									<p class="p-style tc-7096 mb-lg-2 mt-lg-2 mt-sm-3 mt-4 text-center" data-i18n="centum.goalText">
+										The goal on Centum is to fill the 100 squares on the board.&nbsp;
+									</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/tablero.webp"><img src="../img/lazyload-ph.png" data-src="../img/tablero.png" class="img-fluid img-protected mx-auto d-block img-table-style mb-lg-2 img-protected mt-2 mb-4 lazyload" alt="tablero" width="238" height="238"></picture>
+									<p class="p-bloc-6-style tc-7096 text-center" data-i18n="centum.startText">
+										Starting by selecting one and jumping 1 diagonally or 2 horizontally/vertically.
+									</p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col">
 								<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/movs.webp"><img src="../img/lazyload-ph.png" data-src="../img/movs.png" class="img-fluid img-protected mx-auto d-block img-bloc-6-style mt-lg-2 mb-lg-2 img-protected mb-3 lazyload" alt="movs" width="191" height="191"></picture>
-								<p class="tc-7096 p-20-style mt-lg-2 text-center">
-									The game ends when you fill the 100 squares or if you run out of moves!<br>
-								</p>
+									<p class="tc-7096 p-20-style mt-lg-2 text-center" data-i18n="centum.endText">
+										The game ends when you fill the 100 squares or if you run out of moves!<br>
+									</p>
 							</div>
 						</div>
 					</div>
@@ -201,12 +245,12 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col text-start">
-				<p class="text-lg-center p-21-style tc-7096 mb-sm-5 text-md-center mb-md-3 text-sm-center text-center">
-					Compete against players all across the world! <br>Who will get the Centum first?
-				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/header2.webp"><img src="../img/lazyload-ph.png" data-src="../img/header2.png" class="img-fluid img-protected mx-auto d-block mt-md-2 mb-lg-3 mb-md-3 mt-sm-2 img-style mb-5 mb-sm-4 lazyload" alt="centumAchievement" width="634" height="293"></picture>
-				<p class="text-lg-center p-21-style tc-7096 mb-sm-5 text-md-center text-sm-center mt-sm-2 text-center">
-					Earn achievements and challenge <br>your friends from GameCenter!
-				</p>
+					<p class="text-lg-center p-21-style tc-7096 mb-sm-5 text-md-center mb-md-3 text-sm-center text-center" data-i18n-html="centum.competeText">
+						Compete against players all across the world! <br>Who will get the Centum first?
+					</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/header2.webp"><img src="../img/lazyload-ph.png" data-src="../img/header2.png" class="img-fluid img-protected mx-auto d-block mt-md-2 mb-lg-3 mb-md-3 mt-sm-2 img-style mb-5 mb-sm-4 lazyload" alt="centumAchievement" width="634" height="293"></picture>
+					<p class="text-lg-center p-21-style tc-7096 mb-sm-5 text-md-center text-sm-center mt-sm-2 text-center" data-i18n-html="centum.achievementsText">
+						Earn achievements and challenge <br>your friends from GameCenter!
+					</p>
 			</div>
 		</div>
 	</div>
@@ -224,39 +268,39 @@
 		<div class="row">
 			<div class="col-md-3">
 				<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/mclas.webp"><img src="../img/lazyload-ph.png" data-src="../img/mclas.png" class="img-fluid img-protected mx-auto d-block img-34-style mt-md-3 img-protected lazyload" alt="mclas" width="267" height="267"></picture>
-				<h3 class="mg-md float-lg-none text-lg-center tc-7096 h3-style text-sm-center text-center">
-					Classic&nbsp;
-				</h3>
-				<p class="tc-7096 p-22-style text-sm-center text-center">
-					Free start, 3 wild cards, no time.
-				</p>
+					<h3 class="mg-md float-lg-none text-lg-center tc-7096 h3-style text-sm-center text-center" data-i18n="centum.mode.classic.title">
+						Classic&nbsp;
+					</h3>
+					<p class="tc-7096 p-22-style text-sm-center text-center" data-i18n="centum.mode.classic.text">
+						Free start, 3 wild cards, no time.
+					</p>
 			</div>
 			<div class="col-md-3">
 				<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/mran.webp"><img src="../img/lazyload-ph.png" data-src="../img/mran.png" class="img-fluid img-protected mx-auto d-block mt-sm-3 img-35-style img-protected lazyload" alt="mran" width="267" height="267"></picture>
-				<h3 class="mg-md text-lg-center tc-7096 h3-random-mode-style text-sm-center text-center">
-					Random&nbsp;
-				</h3>
-				<p class="tc-7096 p-23-style text-sm-center text-center">
-					Random start, 3 wild cards, &nbsp;no time.
-				</p>
+					<h3 class="mg-md text-lg-center tc-7096 h3-random-mode-style text-sm-center text-center" data-i18n="centum.mode.random.title">
+						Random&nbsp;
+					</h3>
+					<p class="tc-7096 p-23-style text-sm-center text-center" data-i18n="centum.mode.random.text">
+						Random start, 3 wild cards, &nbsp;no time.
+					</p>
 			</div>
 			<div class="col-md-3">
 				<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/mccrono.webp"><img src="../img/lazyload-ph.png" data-src="../img/mccrono.png" class="img-fluid img-protected mx-auto d-block mt-sm-3 img-mccro-style img-protected lazyload" alt="mccrono" width="267" height="267"></picture>
-				<h3 class="mg-md text-lg-center h3-crono-mode-style tc-4279 text-sm-center text-center">
-					Crono&nbsp;
-				</h3>
-				<p class="tc-7096 p-24-style text-sm-center text-center">
-					Free start, no wild cards, &nbsp;60 seconds.
-				</p>
+					<h3 class="mg-md text-lg-center h3-crono-mode-style tc-4279 text-sm-center text-center" data-i18n="centum.mode.crono.title">
+						Crono&nbsp;
+					</h3>
+					<p class="tc-7096 p-24-style text-sm-center text-center" data-i18n="centum.mode.crono.text">
+						Free start, no wild cards, &nbsp;60 seconds.
+					</p>
 			</div>
 			<div class="col-md-3">
 				<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/mmaster.webp"><img src="../img/lazyload-ph.png" data-src="../img/mmaster.png" class="img-fluid img-protected mx-auto d-block mt-sm-3 img-mmast-style img-protected lazyload" alt="mmaster" width="267" height="267"></picture>
-				<h3 class="mg-md text-lg-center tc-7096 h3-master-mode-style text-sm-center text-center">
-					Master&nbsp;
-				</h3>
-				<p class="tc-7096 p-25-style text-sm-center text-center">
-					Try to reach the goal to grow and earn points.
-				</p>
+					<h3 class="mg-md text-lg-center tc-7096 h3-master-mode-style text-sm-center text-center" data-i18n="centum.mode.master.title">
+						Master&nbsp;
+					</h3>
+					<p class="tc-7096 p-25-style text-sm-center text-center" data-i18n="centum.mode.master.text">
+						Try to reach the goal to grow and earn points.
+					</p>
 			</div>
 		</div>
 		<div class="row">
@@ -283,9 +327,9 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<p class="p-26-style tc-7096 mt-lg-5 text-start mt-sm-5 pt-sm-5 pt-5 text-lg-center mb-lg-5 text-sm-center">
-					Available in 5 languages: <br>English, Spanish, French, German and Italian!
-				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/languages.webp"><img src="../img/lazyload-ph.png" data-src="../img/languages.png" class="img-fluid img-protected mx-auto d-block img-languag-style img-protected mt-md-4 mt-sm-3 lazyload" alt="languages" width="376" height="80"></picture>
+					<p class="p-26-style tc-7096 mt-lg-5 text-start mt-sm-5 pt-sm-5 pt-5 text-lg-center mb-lg-5 text-sm-center" data-i18n-html="centum.languagesText">
+						Available in 5 languages: <br>English, Spanish, French, German and Italian!
+					</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/languages.webp"><img src="../img/lazyload-ph.png" data-src="../img/languages.png" class="img-fluid img-protected mx-auto d-block img-languag-style img-protected mt-md-4 mt-sm-3 lazyload" alt="languages" width="376" height="80"></picture>
 			</div>
 		</div>
 	</div>
@@ -297,9 +341,9 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col text-start">
-				<p class="text-lg-center p-21-style tc-7096 mb-sm-5 text-md-center">
-					Enjoy the Centum Hit made by Ricardo Martín Castillo.
-				</p>
+					<p class="text-lg-center p-21-style tc-7096 mb-sm-5 text-md-center" data-i18n="centum.soundtrackText">
+						Enjoy the Centum Hit made by Ricardo Martín Castillo.
+					</p>
 				<div class="container-div-style text-md-center">
 					<div class=" html-widget-style">
 						<p align="center"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="../img/lazyload-ph.png" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1829355084&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="lazyload"></iframe></p>
@@ -332,19 +376,19 @@
 					<br>Mich Apps &nbsp;© 2025
 				</p>
 			</div>
-			<div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
-				<h4 class="text-sm-start text-start tc-4279 mb-4">
-					Apps
-				</h4><a href="../pcn/index.html" class="a-btn a-block">Pañales CN</a><a href="../scn/index.html" class="a-btn a-block">Suplementos CN</a><a href="../pequedosis/index.html" class="a-btn a-block">PequeDosis</a><a href="../memomed/index.html" class="a-btn a-block">MemoMed</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-				<h4 class="text-sm-start text-start tc-4279 mb-4">
-					Juegos
-				</h4><a href="./index.html" class="a-btn a-block">Centum</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-lg-2">
-				<h4 class="text-sm-start text-start tc-4279 mb-4">Soporte</h4><a href="../contacto/index.html" class="a-btn a-block">Contacto</a><a href="../politicadeprivacidad/index.html" class="a-btn a-block">Política de Privacidad</a>
-			</div>
+				<div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
+					<h4 class="text-sm-start text-start tc-4279 mb-4" data-i18n="footer.apps">
+						Apps
+					</h4><a href="../pcn/index.html" class="a-btn a-block">Pañales CN</a><a href="../scn/index.html" class="a-btn a-block">Suplementos CN</a><a href="../pequedosis/index.html" class="a-btn a-block">PequeDosis</a><a href="../memomed/index.html" class="a-btn a-block">MemoMed</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-lg-2 mb-3">
+					<h4 class="text-sm-start text-start tc-4279 mb-4" data-i18n="footer.games">
+						Juegos
+					</h4><a href="./index.html" class="a-btn a-block">Centum</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-lg-2">
+					<h4 class="text-sm-start text-start tc-4279 mb-4" data-i18n="footer.support">Soporte</h4><a href="../contacto/index.html" class="a-btn a-block" data-i18n="footer.contact">Contacto</a><a href="../politicadeprivacidad/index.html" class="a-btn a-block" data-i18n="footer.policy">Política de Privacidad</a>
+				</div>
 		</div>
 	</div>
 </div>
@@ -357,7 +401,58 @@
 
 
 <!-- Additional JS -->
-<script src="../js/all.js?5404"></script><!-- Additional JS END -->
+<script src="../js/all.js?5404"></script>
+<script>
+window.pageTranslations = {
+	es: {
+		"meta.title": "Centum | Mich Apps",
+		"meta.description": "Centum en Mich Apps: juego de lógica y estrategia con información y capturas de la app.",
+		"meta.ogTitle": "Centum | Mich Apps",
+		"meta.ogDescription": "Descubre Centum y su propuesta de juego de lógica dentro de Mich Apps.",
+		"meta.ogLocale": "es_ES",
+		"centum.heroTitle": "Centum: El Juego",
+		"centum.goalText": "El objetivo de Centum es rellenar las 100 casillas del tablero.",
+		"centum.startText": "Empieza seleccionando una casilla y salta 1 en diagonal o 2 en horizontal/vertical.",
+		"centum.endText": "La partida termina cuando rellenas las 100 casillas o te quedas sin movimientos.",
+		"centum.competeText": "Compite contra jugadores de todo el mundo.<br>¿Quién conseguirá antes el Centum?",
+		"centum.achievementsText": "Consigue logros y reta<br>a tus amigos en GameCenter.",
+		"centum.mode.classic.title": "Clásico",
+		"centum.mode.classic.text": "Inicio libre, 3 comodines, sin tiempo.",
+		"centum.mode.random.title": "Aleatorio",
+		"centum.mode.random.text": "Inicio aleatorio, 3 comodines, sin tiempo.",
+		"centum.mode.crono.title": "Crono",
+		"centum.mode.crono.text": "Inicio libre, sin comodines, 60 segundos.",
+		"centum.mode.master.title": "Master",
+		"centum.mode.master.text": "Intenta alcanzar el objetivo para crecer y ganar puntos.",
+		"centum.languagesText": "Disponible en 5 idiomas:<br>inglés, español, francés, alemán e italiano.",
+		"centum.soundtrackText": "Disfruta del Centum Hit creado por Ricardo Martín Castillo."
+	},
+	en: {
+		"meta.title": "Centum | Mich Apps",
+		"meta.description": "Centum on Mich Apps: logic and strategy game with app details and screenshots.",
+		"meta.ogTitle": "Centum | Mich Apps",
+		"meta.ogDescription": "Discover Centum and its logic gameplay proposal on Mich Apps.",
+		"meta.ogLocale": "en_GB",
+		"centum.heroTitle": "Centum: The Game",
+		"centum.goalText": "The goal in Centum is to fill the 100 squares on the board.",
+		"centum.startText": "Start by selecting one square and jump 1 diagonally or 2 horizontally/vertically.",
+		"centum.endText": "The game ends when you fill the 100 squares or when you run out of moves.",
+		"centum.competeText": "Compete against players all over the world.<br>Who will get Centum first?",
+		"centum.achievementsText": "Earn achievements and challenge<br>your friends on GameCenter.",
+		"centum.mode.classic.title": "Classic",
+		"centum.mode.classic.text": "Free start, 3 wild cards, no timer.",
+		"centum.mode.random.title": "Random",
+		"centum.mode.random.text": "Random start, 3 wild cards, no timer.",
+		"centum.mode.crono.title": "Chrono",
+		"centum.mode.crono.text": "Free start, no wild cards, 60 seconds.",
+		"centum.mode.master.title": "Master",
+		"centum.mode.master.text": "Try to reach the goal to level up and earn points.",
+		"centum.languagesText": "Available in 5 languages:<br>English, Spanish, French, German and Italian.",
+		"centum.soundtrackText": "Enjoy the Centum Hit by Ricardo Martín Castillo."
+	}
+};
+</script>
+<script src="../assets/js/main.js?v=20260215"></script><!-- Additional JS END -->
 
 
 </body>

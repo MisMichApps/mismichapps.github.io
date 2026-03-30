@@ -59,19 +59,29 @@
 						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 ms-auto me-md-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-2066">
 							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
 						</button>
-						<div class="collapse navbar-collapse navbar-2066">
-								<ul class="site-navigation nav navbar-nav ms-auto">
-									<li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-									<li class="nav-item"><a href="../pcn/index.html" class="nav-link">Pañales CN</a></li>
-										<li class="nav-item"><a href="../scn/index.html" class="nav-link">Suplementos CN</a></li>
-										<li class="nav-item"><a href="../pequedosis/index.html" class="nav-link">PequeDosis</a></li>
-										<li class="nav-item"><a href="../memomed/index.html" class="nav-link">MemoMed</a></li>
-										<li class="nav-item"><a href="../centum/index.html" class="nav-link">Centum</a></li>
-								</ul>
+							<div class="collapse navbar-collapse navbar-2066">
+									<ul class="site-navigation nav navbar-nav ms-auto">
+										<li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+										<li class="nav-item"><a href="../pcn/index.html" class="nav-link" data-i18n="nav.pcn">Pañales CN</a></li>
+										<li class="nav-item"><a href="../scn/index.html" class="nav-link" data-i18n="nav.scn">Suplementos CN</a></li>
+										<li class="nav-item"><a href="../pequedosis/index.html" class="nav-link" data-i18n="nav.pequedosis">PequeDosis</a></li>
+										<li class="nav-item"><a href="../memomed/index.html" class="nav-link" data-i18n="nav.memomed">MemoMed</a></li>
+										<li class="nav-item"><a href="../centum/index.html" class="nav-link" data-i18n="nav.centum">Centum</a></li>
+									</ul>
+								</div>
+							<div class="language-selector" role="group" aria-label="Selector de idioma / Language selector">
+								<button type="button" class="lang-flag is-active" data-lang="es" aria-label="Español" aria-pressed="true" title="Español">
+									<img src="../img/icons/es.png" alt="Español" width="34" height="34" loading="lazy">
+									<span class="visually-hidden">Español</span>
+								</button>
+								<button type="button" class="lang-flag" data-lang="en" aria-label="English" aria-pressed="false" title="English">
+									<img src="../img/icons/en.png" alt="English" width="34" height="34" loading="lazy">
+									<span class="visually-hidden">English</span>
+								</button>
 							</div>
-					</div>
-				</nav>
-			</div>
+						</div>
+					</nav>
+				</div>
 		</div>
 	</div>
 </div>
@@ -84,39 +94,39 @@
 <div class="bloc bgc-4279 l-bloc" id="contact">
 	<div class="container bloc-xl-lg bloc-md bloc-lg-md">
 		<div class="row">
-			<div class="text-md-start col-lg-8 offset-lg-2 text-sm-start text-start offset-md-1 col-sm-12 offset-sm-0 col-md-10">
-				<h2 class="text-start page-title tc-458 mb-4 h2-style">
-					Contacto
-				</h2>
-				<p class="text-start sub-heading mb-4 p-contact-style">
-					No dude en ponerse en contacto con cualquiera de sus preguntas sobre nuestro producto y servicio. Responderemos lo antes posible.<br>
-				</p>
-				<div class="divider-h site-divider">
-				</div>
-				<form id="contact_form" data-form-type="blocs-form" novalidate="" data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group mb-3">
-						<label class="form-label label-style">
-							Nombre
-						</label>
-						<input id="name" class="form-control" required="">
+				<div class="text-md-start col-lg-8 offset-lg-2 text-sm-start text-start offset-md-1 col-sm-12 offset-sm-0 col-md-10">
+					<h2 class="text-start page-title tc-458 mb-4 h2-style" data-i18n="contact.title">
+						Contacto
+					</h2>
+					<p class="text-start sub-heading mb-4 p-contact-style" data-i18n="contact.subtitle">
+						No dude en ponerse en contacto con cualquiera de sus preguntas sobre nuestro producto y servicio. Responderemos lo antes posible.<br>
+					</p>
+					<div class="divider-h site-divider">
 					</div>
-					<div class="form-group mb-3">
-						<label class="form-label label-email-style">
-							Email
-						</label>
-						<input id="email" class="form-control" type="email" data-error-validation-msg="Not a valid email address" required="">
-					</div>
-					<div class="form-group mb-3">
-						<label class="form-label label-message-style">
-							Mensaje
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required=""></textarea>
-					</div>
-					<div class="text-center">
-						<button class="bloc-button btn btn-lg mt-3 btn-c-6694" type="submit">
-							Enviar
-						</button>
-					</div>
-				</form>
+					<form id="contact_form" data-form-type="blocs-form" novalidate="" data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<div class="form-group mb-3">
+							<label class="form-label label-style" data-i18n="contact.name">
+								Nombre
+							</label>
+							<input id="name" class="form-control" required="">
+						</div>
+						<div class="form-group mb-3">
+							<label class="form-label label-email-style" data-i18n="contact.email">
+								Email
+							</label>
+							<input id="email" class="form-control" type="email" data-error-validation-msg="Not a valid email address" required="">
+						</div>
+						<div class="form-group mb-3">
+							<label class="form-label label-message-style" data-i18n="contact.message">
+								Mensaje
+							</label><textarea id="message" class="form-control" rows="4" cols="50" required=""></textarea>
+						</div>
+						<div class="text-center">
+							<button class="bloc-button btn btn-lg mt-3 btn-c-6694" type="submit" data-i18n="contact.send">
+								Enviar
+							</button>
+						</div>
+					</form>
 			</div>
 		</div>
 	</div>
@@ -143,21 +153,21 @@
 					<br>Mich Apps &nbsp;© 2025
 				</p>
 			</div>
-			<div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
-				<h4 class="text-sm-start text-start tc-4279 mb-4">
-					Apps
-				</h4><a href="../pcn/index.html" class="a-btn a-block">Pañales CN</a><a href="../scn/index.html" class="a-btn a-block">Suplementos CN</a><a href="../pequedosis/index.html" class="a-btn a-block">PequeDosis</a><a href="../memomed/index.html" class="a-btn a-block">MemoMed</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-				<h4 class="text-sm-start text-start tc-4279 mb-4">
-					Juegos
-				</h4><a href="../centum/index.html" class="a-btn a-block">Centum</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-lg-2">
-				<h4 class="text-sm-start text-start tc-4279 mb-4">Soporte</h4><a href="./index.html" class="a-btn a-block">Contacto</a><a href="../politicadeprivacidad/index.html" class="a-btn a-block">Política de Privacidad</a>
+				<div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
+					<h4 class="text-sm-start text-start tc-4279 mb-4" data-i18n="footer.apps">
+						Apps
+					</h4><a href="../pcn/index.html" class="a-btn a-block">Pañales CN</a><a href="../scn/index.html" class="a-btn a-block">Suplementos CN</a><a href="../pequedosis/index.html" class="a-btn a-block">PequeDosis</a><a href="../memomed/index.html" class="a-btn a-block">MemoMed</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-lg-2 mb-3">
+					<h4 class="text-sm-start text-start tc-4279 mb-4" data-i18n="footer.games">
+						Juegos
+					</h4><a href="../centum/index.html" class="a-btn a-block">Centum</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-lg-2">
+					<h4 class="text-sm-start text-start tc-4279 mb-4" data-i18n="footer.support">Soporte</h4><a href="./index.html" class="a-btn a-block" data-i18n="footer.contact">Contacto</a><a href="../politicadeprivacidad/index.html" class="a-btn a-block" data-i18n="footer.policy">Política de Privacidad</a>
+				</div>
 			</div>
 		</div>
-	</div>
 </div>
 <!-- footer END -->
 
@@ -169,6 +179,36 @@
 
 <!-- Additional JS -->
 <script src="../js/all.js?5404"></script>
+<script>
+window.pageTranslations = {
+	es: {
+		"meta.title": "Contacto | Mich Apps",
+		"meta.description": "Contacto de Mich Apps para consultas, soporte y dudas sobre nuestras aplicaciones.",
+		"meta.ogTitle": "Contacto | Mich Apps",
+		"meta.ogDescription": "Ponte en contacto con Mich Apps para soporte y consultas.",
+		"meta.ogLocale": "es_ES",
+		"contact.title": "Contacto",
+		"contact.subtitle": "No dude en ponerse en contacto con cualquiera de sus preguntas sobre nuestro producto y servicio. Responderemos lo antes posible.",
+		"contact.name": "Nombre",
+		"contact.email": "Email",
+		"contact.message": "Mensaje",
+		"contact.send": "Enviar"
+	},
+	en: {
+		"meta.title": "Contact | Mich Apps",
+		"meta.description": "Contact Mich Apps for support, questions, and app-related inquiries.",
+		"meta.ogTitle": "Contact | Mich Apps",
+		"meta.ogDescription": "Get in touch with Mich Apps for support and questions.",
+		"meta.ogLocale": "en_GB",
+		"contact.title": "Contact",
+		"contact.subtitle": "Feel free to contact us with any questions about our products and services. We will respond as soon as possible.",
+		"contact.name": "Name",
+		"contact.email": "Email",
+		"contact.message": "Message",
+		"contact.send": "Send"
+	}
+};
+</script>
 <script src="../assets/js/main.js?v=20260215"></script><!-- Additional JS END -->
 
 

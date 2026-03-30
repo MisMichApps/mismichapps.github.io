@@ -58,13 +58,23 @@
                                 </button>
                                 <div class="collapse navbar-collapse navbar-2066">
                                     <ul class="site-navigation nav navbar-nav ms-auto">
-                                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Pañales CN</a></li>
-                                        <li class="nav-item"><a href="../scn/index.html" class="nav-link">Suplementos CN</a></li>
-                                        <li class="nav-item"><a href="../pequedosis/index.html" class="nav-link">PequeDosis</a></li>
-                                        <li class="nav-item"><a href="../memomed/index.html" class="nav-link">MemoMed</a></li>
-                                        <li class="nav-item"><a href="../centum/index.html" class="nav-link">Centum</a></li>
+                                        <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page" data-i18n="nav.pcn">Pañales CN</a></li>
+                                        <li class="nav-item"><a href="../scn/index.html" class="nav-link" data-i18n="nav.scn">Suplementos CN</a></li>
+                                        <li class="nav-item"><a href="../pequedosis/index.html" class="nav-link" data-i18n="nav.pequedosis">PequeDosis</a></li>
+                                        <li class="nav-item"><a href="../memomed/index.html" class="nav-link" data-i18n="nav.memomed">MemoMed</a></li>
+                                        <li class="nav-item"><a href="../centum/index.html" class="nav-link" data-i18n="nav.centum">Centum</a></li>
                                     </ul>
+                                </div>
+                                <div class="language-selector" role="group" aria-label="Selector de idioma / Language selector">
+                                    <button type="button" class="lang-flag is-active" data-lang="es" aria-label="Español" aria-pressed="true" title="Español">
+                                        <img src="../img/icons/es.png" alt="Español" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">Español</span>
+                                    </button>
+                                    <button type="button" class="lang-flag" data-lang="en" aria-label="English" aria-pressed="false" title="English">
+                                        <img src="../img/icons/en.png" alt="English" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">English</span>
+                                    </button>
                                 </div>
                             </div>
                         </nav>
@@ -82,41 +92,41 @@
                         <img src="../img/IconPCN.png" alt="Icono de la app Pañales CN" width="70" height="70" data-fallback="../assets/img/icon-pcn.svg" data-initials="PC">
                     </div>
                     <div>
-                        <p class="app-detail-kicker">Herramienta sanitaria</p>
+                        <p class="app-detail-kicker" data-i18n="pcn.kicker">Herramienta sanitaria</p>
                         <h1 class="app-detail-title">Pañales CN</h1>
-                        <p class="app-detail-description">Encuentra el pañal adecuado en segundos: marca, talla, tipo y Código Nacional, en una ficha clara.</p>
+                        <p class="app-detail-description" data-i18n="pcn.description">Encuentra el pañal adecuado en segundos: marca, talla, tipo y Código Nacional, en una ficha clara.</p>
                         <div class="app-chips" aria-label="Etiquetas de Pañales CN">
-                            <span class="app-chip">Sanitarios</span>
-                            <span class="app-chip">Consulta rápida</span>
-                            <span class="app-chip">Código Nacional</span>
+                            <span class="app-chip" data-i18n="pcn.chip.health">Sanitarios</span>
+                            <span class="app-chip" data-i18n="pcn.chip.quick">Consulta rápida</span>
+                            <span class="app-chip" data-i18n="pcn.chip.code">Código Nacional</span>
                         </div>
                     </div>
                 </header>
 
                 <div class="app-columns">
                     <section class="app-panel">
-                        <h2>Qué hace</h2>
-                        <p>Catálogo rápido orientado a consulta y prescripción, con el CN como referencia central para identificar productos con claridad.</p>
+                        <h2 data-i18n="pcn.section.what">Qué hace</h2>
+                        <p data-i18n="pcn.section.whatText">Catálogo rápido orientado a consulta y prescripción, con el CN como referencia central para identificar productos con claridad.</p>
                     </section>
 
                     <section class="app-panel">
-                        <h2>Para quién</h2>
-                        <p>Pensada para profesionales sanitarios que necesitan resolver consultas ágiles en planta, consulta externa o práctica diaria.</p>
+                        <h2 data-i18n="pcn.section.who">Para quién</h2>
+                        <p data-i18n="pcn.section.whoText">Pensada para profesionales sanitarios que necesitan resolver consultas ágiles en planta, consulta externa o práctica diaria.</p>
                     </section>
 
                     <section class="app-panel">
-                        <h2>Funciones clave</h2>
+                        <h2 data-i18n="pcn.section.features">Funciones clave</h2>
                         <ul>
-                            <li>Búsqueda y consulta por marca y talla.</li>
-                            <li>Ficha de producto con CN visible y descripción resumida.</li>
-                            <li>Navegación rápida para el día a día asistencial.</li>
+                            <li data-i18n="pcn.feature.1">Búsqueda y consulta por marca y talla.</li>
+                            <li data-i18n="pcn.feature.2">Ficha de producto con CN visible y descripción resumida.</li>
+                            <li data-i18n="pcn.feature.3">Navegación rápida para el día a día asistencial.</li>
                         </ul>
                     </section>
                 </div>
 
                 <section class="app-note" aria-labelledby="aviso-pcn">
-                    <h2 id="aviso-pcn">Aviso</h2>
-                    <p>Herramienta de apoyo. Verifica siempre CN y compatibilidad con el protocolo del centro y fuentes oficiales.</p>
+                    <h2 id="aviso-pcn" data-i18n="pcn.note.title">Aviso</h2>
+                    <p data-i18n="pcn.note.text">Herramienta de apoyo. Verifica siempre CN y compatibilidad con el protocolo del centro y fuentes oficiales.</p>
                 </section>
 
                 <div class="app-links" aria-label="Enlaces de Pañales CN">
@@ -126,8 +136,8 @@
                     <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.michapps.pcn" target="_blank" rel="noopener noreferrer" aria-label="Descargar Pañales CN en Google Play">
                         <img src="../img/gplay.png" alt="Disponible en Google Play" width="185" height="55" loading="lazy">
                     </a>
-                    <a class="btn-link-pill" href="../contacto/index.html">Soporte</a>
-                    <a class="btn-link-pill" href="../politicadeprivacidad/index.html">Política de privacidad</a>
+                    <a class="btn-link-pill" href="../contacto/index.html" data-i18n="common.support">Soporte</a>
+                    <a class="btn-link-pill" href="../politicadeprivacidad/index.html" data-i18n="common.privacy">Política de privacidad</a>
                 </div>
             </article>
         </div>
@@ -148,20 +158,20 @@
                         <p class="text-sm-start float-none text-start">Mich Apps © <span data-current-year>2026</span> por Carlos Martín Coloma</p>
                     </div>
                     <div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Apps</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.apps">Apps</h4>
                         <a href="./index.html" class="a-btn a-block">Pañales CN</a>
                         <a href="../scn/index.html" class="a-btn a-block">Suplementos CN</a>
                         <a href="../pequedosis/index.html" class="a-btn a-block">PequeDosis</a>
                         <a href="../memomed/index.html" class="a-btn a-block">MemoMed</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Juegos</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.games">Juegos</h4>
                         <a href="../centum/index.html" class="a-btn a-block">Centum</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Soporte</h4>
-                        <a href="../contacto/index.html" class="a-btn a-block">Contacto</a>
-                        <a href="../politicadeprivacidad/index.html" class="a-btn a-block">Política de privacidad</a>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.support">Soporte</h4>
+                        <a href="../contacto/index.html" class="a-btn a-block" data-i18n="footer.contact">Contacto</a>
+                        <a href="../politicadeprivacidad/index.html" class="a-btn a-block" data-i18n="footer.policy">Política de privacidad</a>
                     </div>
                 </div>
             </div>
@@ -170,6 +180,54 @@
 </div>
 
 <script src="../js/all.js?5404"></script>
+<script>
+window.pageTranslations = {
+    es: {
+        "meta.title": "Pañales CN | Mich Apps",
+        "meta.description": "Pañales CN: consulta rápida por marca, talla y Código Nacional para uso sanitario.",
+        "meta.ogTitle": "Pañales CN | Mich Apps",
+        "meta.ogDescription": "Encuentra el pañal adecuado en segundos con marca, talla, tipo y Código Nacional en una ficha clara.",
+        "meta.ogLocale": "es_ES",
+        "pcn.kicker": "Herramienta sanitaria",
+        "pcn.description": "Encuentra el pañal adecuado en segundos: marca, talla, tipo y Código Nacional, en una ficha clara.",
+        "pcn.chip.health": "Sanitarios",
+        "pcn.chip.quick": "Consulta rápida",
+        "pcn.chip.code": "Código Nacional",
+        "pcn.section.what": "Qué hace",
+        "pcn.section.whatText": "Catálogo rápido orientado a consulta y prescripción, con el CN como referencia central para identificar productos con claridad.",
+        "pcn.section.who": "Para quién",
+        "pcn.section.whoText": "Pensada para profesionales sanitarios que necesitan resolver consultas ágiles en planta, consulta externa o práctica diaria.",
+        "pcn.section.features": "Funciones clave",
+        "pcn.feature.1": "Búsqueda y consulta por marca y talla.",
+        "pcn.feature.2": "Ficha de producto con CN visible y descripción resumida.",
+        "pcn.feature.3": "Navegación rápida para el día a día asistencial.",
+        "pcn.note.title": "Aviso",
+        "pcn.note.text": "Herramienta de apoyo. Verifica siempre CN y compatibilidad con el protocolo del centro y fuentes oficiales."
+    },
+    en: {
+        "meta.title": "Pañales CN | Mich Apps",
+        "meta.description": "Pañales CN: fast lookup by brand, size, and National Code for clinical use.",
+        "meta.ogTitle": "Pañales CN | Mich Apps",
+        "meta.ogDescription": "Find the right diaper in seconds with brand, size, type, and National Code in a clear card.",
+        "meta.ogLocale": "en_GB",
+        "pcn.kicker": "Healthcare Tool",
+        "pcn.description": "Find the right diaper in seconds: brand, size, type, and National Code in a clear product card.",
+        "pcn.chip.health": "Healthcare",
+        "pcn.chip.quick": "Quick lookup",
+        "pcn.chip.code": "National Code",
+        "pcn.section.what": "What it does",
+        "pcn.section.whatText": "A fast catalog for point-of-care lookup and prescribing support, with National Code as the main reference.",
+        "pcn.section.who": "Who it is for",
+        "pcn.section.whoText": "Designed for healthcare professionals who need fast answers in wards, outpatient clinics, or daily practice.",
+        "pcn.section.features": "Key features",
+        "pcn.feature.1": "Search and lookup by brand and size.",
+        "pcn.feature.2": "Product cards with visible National Code and concise description.",
+        "pcn.feature.3": "Fast navigation for daily clinical workflows.",
+        "pcn.note.title": "Notice",
+        "pcn.note.text": "Support tool only. Always verify National Code and protocol compatibility with your center and official sources."
+    }
+};
+</script>
 <script src="../assets/js/main.js?v=20260215"></script>
 </body>
 </html>

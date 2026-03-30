@@ -57,13 +57,23 @@
                                 </button>
                                 <div class="collapse navbar-collapse navbar-2066">
                                     <ul class="site-navigation nav navbar-nav ms-auto">
-                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Inicio</a></li>
-                                        <li class="nav-item"><a href="./pcn/index.html" class="nav-link">Pañales CN</a></li>
-                                        <li class="nav-item"><a href="./scn/index.html" class="nav-link">Suplementos CN</a></li>
-                                        <li class="nav-item"><a href="./pequedosis/index.html" class="nav-link">PequeDosis</a></li>
-                                        <li class="nav-item"><a href="./memomed/index.html" class="nav-link">MemoMed</a></li>
-                                        <li class="nav-item"><a href="./centum/index.html" class="nav-link">Centum</a></li>
+                                        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page" data-i18n="nav.home">Inicio</a></li>
+                                        <li class="nav-item"><a href="./pcn/index.html" class="nav-link" data-i18n="nav.pcn">Pañales CN</a></li>
+                                        <li class="nav-item"><a href="./scn/index.html" class="nav-link" data-i18n="nav.scn">Suplementos CN</a></li>
+                                        <li class="nav-item"><a href="./pequedosis/index.html" class="nav-link" data-i18n="nav.pequedosis">PequeDosis</a></li>
+                                        <li class="nav-item"><a href="./memomed/index.html" class="nav-link" data-i18n="nav.memomed">MemoMed</a></li>
+                                        <li class="nav-item"><a href="./centum/index.html" class="nav-link" data-i18n="nav.centum">Centum</a></li>
                                     </ul>
+                                </div>
+                                <div class="language-selector" role="group" aria-label="Selector de idioma / Language selector">
+                                    <button type="button" class="lang-flag is-active" data-lang="es" aria-label="Español" aria-pressed="true" title="Español">
+                                        <img src="./img/icons/es.png" alt="Español" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">Español</span>
+                                    </button>
+                                    <button type="button" class="lang-flag" data-lang="en" aria-label="English" aria-pressed="false" title="English">
+                                        <img src="./img/icons/en.png" alt="English" width="34" height="34" loading="lazy">
+                                        <span class="visually-hidden">English</span>
+                                    </button>
                                 </div>
                             </div>
                         </nav>
@@ -76,8 +86,8 @@
     <main>
         <section class="home-hero" aria-labelledby="apps-title">
             <div class="container">
-                <h1 id="apps-title" class="home-title">Apps Disponibles</h1>
-                <p class="home-subtitle">Soluciones prácticas para consulta clínica, registro de notas y herramientas de apoyo desarrolladas por Mich Apps.</p>
+                <h1 id="apps-title" class="home-title" data-i18n="home.appsTitle">Apps Disponibles</h1>
+                <p class="home-subtitle" data-i18n="home.appsSubtitle">Soluciones prácticas para consulta clínica, registro de notas y herramientas de apoyo desarrolladas por Mich Apps.</p>
             </div>
         </section>
 
@@ -89,8 +99,8 @@
                             <img src="./img/IconPCN.png" alt="Icono de Pañales CN" width="64" height="64" loading="lazy" data-fallback="./assets/img/icon-pcn.svg" data-initials="PC">
                         </a>
                         <h3>Pañales CN</h3>
-                        <p>Localiza marca, talla, tipo y Código Nacional en segundos, con fichas claras para consulta sanitaria.</p>
-                        <a class="app-card-link" href="./pcn/index.html">Ver app</a>
+                        <p data-i18n="home.pcnDesc">Localiza marca, talla, tipo y Código Nacional en segundos, con fichas claras para consulta sanitaria.</p>
+                        <a class="app-card-link" href="./pcn/index.html" data-i18n="home.viewApp">Ver app</a>
                     </article>
 
                     <article class="app-card">
@@ -98,8 +108,8 @@
                             <img src="./img/IconBCN.png" alt="Icono de Suplementos CN" width="64" height="64" loading="lazy" data-fallback="./assets/img/icon-scn.svg" data-initials="SC">
                         </a>
                         <h3>Suplementos CN</h3>
-                        <p>Tu atajo para encontrar suplementos por Código Nacional con menos clics y máxima legibilidad.</p>
-                        <a class="app-card-link" href="./scn/index.html">Ver app</a>
+                        <p data-i18n="home.scnDesc">Tu atajo para encontrar suplementos por Código Nacional con menos clics y máxima legibilidad.</p>
+                        <a class="app-card-link" href="./scn/index.html" data-i18n="home.viewApp">Ver app</a>
                     </article>
 
                     <article class="app-card">
@@ -107,8 +117,8 @@
                             <img src="./img/IconPD.png" alt="Icono de PequeDosis" width="64" height="64" loading="lazy" data-fallback="./assets/img/icon-pequedosis.svg" data-initials="PD">
                         </a>
                         <h3>PequeDosis</h3>
-                        <p>Calculadora y guía rápida de dosis pediátricas para uso clínico.</p>
-                        <a class="app-card-link" href="./pequedosis/index.html">Ver app</a>
+                        <p data-i18n="home.pequedosisDesc">Calculadora y guía rápida de dosis pediátricas para uso clínico.</p>
+                        <a class="app-card-link" href="./pequedosis/index.html" data-i18n="home.viewApp">Ver app</a>
                     </article>
 
                     <article class="app-card">
@@ -116,8 +126,8 @@
                             <img src="./img/IconMMM.png" alt="Icono de MemoMed" width="64" height="64" loading="lazy" data-fallback="./assets/img/icon-memomed.svg" data-initials="MM">
                         </a>
                         <h3>MemoMed</h3>
-                        <p>Notas clínicas modulares con búsqueda, organización y exportación.</p>
-                        <a class="app-card-link" href="./memomed/index.html">Ver app</a>
+                        <p data-i18n="home.memomedDesc">Notas clínicas modulares con búsqueda, organización y exportación.</p>
+                        <a class="app-card-link" href="./memomed/index.html" data-i18n="home.viewApp">Ver app</a>
                     </article>
                 </div>
             </div>
@@ -125,8 +135,8 @@
 
         <section class="games-hero" aria-labelledby="games-title">
             <div class="container">
-                <h2 id="games-title" class="games-title">Juegos Disponibles</h2>
-                <p class="games-subtitle">Desafíos para entrenar lógica y estrategia con el sello de Mich Apps.</p>
+                <h2 id="games-title" class="games-title" data-i18n="home.gamesTitle">Juegos Disponibles</h2>
+                <p class="games-subtitle" data-i18n="home.gamesSubtitle">Desafíos para entrenar lógica y estrategia con el sello de Mich Apps.</p>
             </div>
         </section>
 
@@ -138,8 +148,8 @@
                             <img src="./img/Icon.png" alt="Icono de Centum" width="64" height="64" loading="lazy" data-fallback="./assets/img/app-placeholder.svg" data-initials="CE">
                         </a>
                         <h3>Centum</h3>
-                        <p>Un reto de lógica para desconectar y entrenar estrategia.</p>
-                        <a class="app-card-link" href="./centum/index.html">Ir a Centum</a>
+                        <p data-i18n="home.centumDesc">Un reto de lógica para desconectar y entrenar estrategia.</p>
+                        <a class="app-card-link" href="./centum/index.html" data-i18n="home.goCentum">Ir a Centum</a>
                     </article>
                 </div>
             </div>
@@ -161,20 +171,20 @@
                         <p class="text-sm-start float-none text-start">Mich Apps © <span data-current-year>2026</span> por Carlos Martín Coloma</p>
                     </div>
                     <div class="col-sm-6 col-lg-2 offset-lg-1 col-md-3 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Apps</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.apps">Apps</h4>
                         <a href="./pcn/index.html" class="a-btn a-block">Pañales CN</a>
                         <a href="./scn/index.html" class="a-btn a-block">Suplementos CN</a>
                         <a href="./pequedosis/index.html" class="a-btn a-block">PequeDosis</a>
                         <a href="./memomed/index.html" class="a-btn a-block">MemoMed</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Juegos</h4>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.games">Juegos</h4>
                         <a href="./centum/index.html" class="a-btn a-block">Centum</a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-lg-2 mb-3">
-                        <h4 class="text-sm-start text-start mb-4">Soporte</h4>
-                        <a href="./contacto/index.html" class="a-btn a-block">Contacto</a>
-                        <a href="./politicadeprivacidad/index.html" class="a-btn a-block">Política de privacidad</a>
+                        <h4 class="text-sm-start text-start mb-4" data-i18n="footer.support">Soporte</h4>
+                        <a href="./contacto/index.html" class="a-btn a-block" data-i18n="footer.contact">Contacto</a>
+                        <a href="./politicadeprivacidad/index.html" class="a-btn a-block" data-i18n="footer.policy">Política de privacidad</a>
                     </div>
                 </div>
             </div>
@@ -183,6 +193,46 @@
 </div>
 
 <script src="./js/all.js?5404"></script>
+<script>
+window.pageTranslations = {
+    es: {
+        "meta.title": "Mich Apps | Apps clínicas y utilidades",
+        "meta.description": "Mich Apps: aplicaciones clínicas y utilidades sanitarias como Pañales CN, Suplementos CN, Centum, PequeDosis y MemoMed.",
+        "meta.ogTitle": "Mich Apps | Apps clínicas y utilidades",
+        "meta.ogDescription": "Descubre Pañales CN, Suplementos CN, Centum, PequeDosis y MemoMed en un mismo portal.",
+        "meta.ogLocale": "es_ES",
+        "home.appsTitle": "Apps Disponibles",
+        "home.appsSubtitle": "Soluciones prácticas para consulta clínica, registro de notas y herramientas de apoyo desarrolladas por Mich Apps.",
+        "home.pcnDesc": "Localiza marca, talla, tipo y Código Nacional en segundos, con fichas claras para consulta sanitaria.",
+        "home.scnDesc": "Tu atajo para encontrar suplementos por Código Nacional con menos clics y máxima legibilidad.",
+        "home.pequedosisDesc": "Calculadora y guía rápida de dosis pediátricas para uso clínico.",
+        "home.memomedDesc": "Notas clínicas modulares con búsqueda, organización y exportación.",
+        "home.viewApp": "Ver app",
+        "home.gamesTitle": "Juegos Disponibles",
+        "home.gamesSubtitle": "Desafíos para entrenar lógica y estrategia con el sello de Mich Apps.",
+        "home.centumDesc": "Un reto de lógica para desconectar y entrenar estrategia.",
+        "home.goCentum": "Ir a Centum"
+    },
+    en: {
+        "meta.title": "Mich Apps | Clinical Apps & Tools",
+        "meta.description": "Mich Apps: clinical and healthcare utility apps including Pañales CN, Suplementos CN, Centum, PequeDosis, and MemoMed.",
+        "meta.ogTitle": "Mich Apps | Clinical Apps & Tools",
+        "meta.ogDescription": "Discover Pañales CN, Suplementos CN, Centum, PequeDosis, and MemoMed in one place.",
+        "meta.ogLocale": "en_GB",
+        "home.appsTitle": "Available Apps",
+        "home.appsSubtitle": "Practical solutions for clinical consultations, note-taking, and point-of-care support tools built by Mich Apps.",
+        "home.pcnDesc": "Find brand, size, type, and National Code in seconds with clear product cards for clinical use.",
+        "home.scnDesc": "Your shortcut to find supplements by National Code with fewer taps and better readability.",
+        "home.pequedosisDesc": "Fast pediatric dosage calculator and quick clinical reference.",
+        "home.memomedDesc": "Modular clinical notes with search, organization, and export.",
+        "home.viewApp": "View app",
+        "home.gamesTitle": "Available Games",
+        "home.gamesSubtitle": "Challenges to train logic and strategy with the Mich Apps signature.",
+        "home.centumDesc": "A logic challenge to disconnect and sharpen strategy.",
+        "home.goCentum": "Go to Centum"
+    }
+};
+</script>
 <script src="./assets/js/main.js?v=20260215"></script>
 </body>
 </html>
