@@ -480,6 +480,16 @@ textarea:focus-visible {
   color: var(--accent) !important;
 }
 
+.privacy-policy-content a {
+  color: var(--text) !important;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.privacy-policy-content a:hover {
+  color: var(--accent-strong) !important;
+}
+
 @media (max-width: 460px) {
   .app-links .store-btn img {
     width: 164px;
